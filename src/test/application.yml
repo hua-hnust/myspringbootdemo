@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+   #数据源配置
+   datasource:
+      url: jdbc:mysql://localhost:3306/user
+      username: root
+      password: xhua
+      driver-class-name: com.mysql.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+   #模版配置
+#   thymeleaf:
+#      cache: false
+#      prefix: classpath:/templates/
+#      suffix: .html
+#      encoding: UTF-8
+#      content-type: text/html
+#      mode: HTML5
+
+mybatis:
+  #mybatis配置
+  mapper-locations: com/example/demo/mappers/*.xml
+  type-aliases-package: com.example.demo.dao
